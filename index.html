@@ -1,41 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meme Generator Mark</title>
+        <link rel="stylesheet" href="app.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meme Generator Mark</title>
-    <link rel="stylesheet" href="app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Nosifer&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nosifer&display=swap" rel="stylesheet">
-</head>
+    <body>
+        <h1>Welcome to Meme Generator</h1>
 
-<body>
-    <h1>Welcome to Meme Generator</h1>
+        <form action="" id="memeform">
+            <div>
+                <label for="image"> Image URL</label>
+                <input
+                    type="text"
+                    id="url"
+                    placeholder="Enter Your URL Here"
+                    required
+                />
+            </div>
 
-    <form action="" id=memeform>
-        <div><label for="image"> Image URL</label>
-            <input type="text" id="url" placeholder="Enter Your URL Here">
-        </div>
+            <div>
+                <label for="topText"> Top Text</label>
+                <input
+                    type="text"
+                    id="topText"
+                    placeholder="Enter Your Top Caption"
+                    required
+                />
+            </div>
 
-        <div><label for="topText"> Top Text</label>
-            <input type="text" id="topText" placeholder="Enter Your Top Caption">
-        </div>
+            <div>
+                <label for="bottomText"> Bottom Test</label>
+                <input
+                    type="text"
+                    id="bottomText"
+                    placeholder="Enter Your Bottom Caption"
+                    required
+                />
+            </div>
 
-        <div><label for="bottomText"> Bottom Test</label>
-            <input type="text" id="bottomText" placeholder="Enter Your Bottom Caption">
-        </div>
+            <button id="submitButton">Submit</button>
+        </form>
 
-        <button id="submitButton">Submit</button>
-    </form>
+        <section id="imageHolder"></section>
 
-    <section id="imageHolder">
-    </section>
-
-    <script src="app.js"></script>
-</body>
-
+        <script src="app.js"></script>
+        <script src="http://unpkg.com/jquery"></script>
+    </body>
 </html>
